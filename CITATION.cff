@@ -1,0 +1,21 @@
+# XRD Plotter 0.1
+---
+cff-version: "0.1.0"
+title: "VT-PXRD-Plotter: A Tool for Visualizing Variable-Temperature Powder X-ray Diffraction Data"
+version: "0.1.0"
+message: "If you use this software, please cite it using these metadata."
+authors: 
+  - family-names: Dutta
+    given-names: Arnab
+    orcid: "https://orcid.org/0000-0002-4748-049X"
+date-released: 2025-08-07
+repository-code: "https://github.com/arnablattice/VT-PXRD-Plotter"
+keywords: 
+  - "PXRD"
+  - "Variable Temperature XRD"
+  - "Crystallography"
+  - "Data Visualization"
+  - "Phase Analysis"
+  - "Heatmap Plot"
+license: "MIT"
+...
