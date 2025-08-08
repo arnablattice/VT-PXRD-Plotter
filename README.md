@@ -9,9 +9,9 @@ Clone the repo (or download ZIP).
 <br>
 Create a venv, then:
 <br>
-bash
-Copy
-Edit
 pip install -r requirements-dev.txt
+<br>
 pip install -e .
-vtpxrd    # run inside a directory that has your .xy files
+<br>
+vtpxrd    
+<br># run inside a directory that has your .xy files
