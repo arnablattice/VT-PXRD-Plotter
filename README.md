@@ -1,6 +1,6 @@
 # VT-PXRD-Plotter
 
-[![License](https://img.shields.io/badge/license-BSD%203--Clause-blue.svg)](LICENSE)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/python-3.8%2B-blue.svg)](https://www.python.org/downloads/)
 
 A Python-based tool for visualizing and analyzing variable-temperature powder X-ray diffraction (VT-PXRD) data.  
