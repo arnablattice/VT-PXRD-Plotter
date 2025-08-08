@@ -11,9 +11,9 @@ Generates temperature-dependent 2θ plots, heatmaps, and phase evolution profile
 ---
 
 ## Features
-- 📊 Generate high-resolution contour/heatmap plots from multiple `.xy` files  
+- 📊 Generate high-resolution contour/heatmap plots from multiple `.xy` diffraction files  
 - 🎨 Flexible colormap selection (built-in or custom)  
-- 🔬 Support for multiple X-ray sources (CuKα, AgKα, MoKα, custom)  
+- 🔬 Support for multiple X-ray sources lebal (CuKα, AgKα, MoKα, custom)  
 - 🌡 Temperature axis in Kelvin or Celsius  
 - 💾 Export plots to `.tif` or `.jpg` formats  
 
