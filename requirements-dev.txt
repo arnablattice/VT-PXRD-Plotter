@@ -1,0 +1,9 @@
+-r requirements.txt
+setuptools>=69
+wheel
+build
+twine
+flake8
+black
+isort
+pytest
