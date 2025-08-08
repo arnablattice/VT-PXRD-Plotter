@@ -1,43 +1,43 @@
-import setuptools
-import re
+# setup.py
+# Copyright (c) 2025 ArnabDutta
 
-# Versioning
-VERSIONFILE = "vtpxrd/__init__.py"  # Ensure your main package folder is named 'vtpxrd'
-getversion = re.search(r"^__version__ = ['\"]([^'\"]*)['\"]", open(VERSIONFILE, "rt").read(), re.M)
-if getversion:
-    new_version = getversion.group(1)
-else:
-    raise RuntimeError("Unable to find version string in %s." % (VERSIONFILE,))
+from pathlib import Path
+from setuptools import setup, find_packages
 
-# Long description from README
-with open("README.md", "r", encoding="utf-8") as fh:
-    long_description = fh.read()
+README = (Path(__file__).parent / "README.md").read_text(encoding="utf-8") if (Path(__file__).parent / "README.md").exists() else ""
 
-# Setup
-setuptools.setup(
-    name="vtpxrd",
-    version=new_version,
-    author="Arnab Dutta",
-    author_email="your_email@example.com",  # Replace with your real email
-    description="VT-PXRD-Plotter: A tool for plotting and analyzing variable-temperature PXRD data.",
-    long_description=long_description,
+setup(
+    name="vt-pxrd-plotter",
+    version="1.0.0",
+    description="Interactive VT-PXRD heatmap/contour plotter for .xy diffraction files (current directory).",
+    long_description=README,
     long_description_content_type="text/markdown",
-    url="https://github.com/arnablattice/VT-PXRD-Plotter",
-    download_url=f"https://github.com/arnablattice/VT-PXRD-Plotter/archive/refs/tags/v{new_version}.tar.gz",
-    packages=setuptools.find_packages(),  # Automatically finds all Python packages
+    author="ArnabDutta",
+    license="MIT",
+    keywords=["XRD", "PXRD", "diffraction", "materials", "plotting"],
+    python_requires=">=3.8",
+    package_dir={"": "src"},
+    packages=find_packages(where="src"),
     include_package_data=True,
-    license_files=["LICENSE"],
     install_requires=[
-        'numpy',
-        'pandas',
-        'matplotlib'
+        "numpy>=1.22",
+        "pandas>=1.5",
+        "matplotlib>=3.6",
     ],
-    python_requires='>=3.6',
+    entry_points={
+        "console_scripts": [
+            "vt-pxrd-plotter=vt_pxrd_plotter.vt_pxrd_plotter:main",
+        ],
+    },
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
-        "Intended Audience :: Science/Research",
         "Topic :: Scientific/Engineering :: Visualization",
+        "Intended Audience :: Science/Research",
     ],
+    project_urls={
+        "Homepage": "https://github.com/your-org-or-user/vt-pxrd-plotter",
+        "Issues": "https://github.com/your-org-or-user/vt-pxrd-plotter/issues",
+    },
 )
