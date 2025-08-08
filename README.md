@@ -11,7 +11,7 @@ Generates temperature-dependent 2θ plots, heatmaps, and phase evolution profile
 ---
 
 ## Features
-<img src="https://github.com/arnablattice/VT-PXRD-Plotter/blob/de023f7ab2b6aecff608d1a6a518e558c0b86c9f/example/heatmap_plot.jpg?raw=true" width="300">
+<img src="https://github.com/arnablattice/VT-PXRD-Plotter/blob/de023f7ab2b6aecff608d1a6a518e558c0b86c9f/example/heatmap_plot.jpg?raw=true" width="600">
 - 📊 Generate high-resolution contour/heatmap plots from multiple `.xy` diffraction files  
 - 🎨 Flexible colormap selection (built-in or custom)  
 - 🔬 Support for multiple X-ray sources lebal (CuKα, AgKα, MoKα, custom)  
