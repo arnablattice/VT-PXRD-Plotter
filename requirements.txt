@@ -1,3 +1,4 @@
-pandas
-numpy
-matplotlib
+# Runtime dependencies for VT-PXRD Plotter
+numpy>=1.22
+pandas>=1.5
+matplotlib>=3.6
